@@ -1,0 +1,180 @@
+﻿@{
+    ViewData["Title"] = "Documentação Elevador";
+}
+
+<div>
+    <div>
+        <h1 class="display-4">Documentação Projeto Elevador</h1>
+        <h2 class="display-4">Samsung Ocean, 2ª Turma da Formação MS-DEV</h2>
+        <br><hr>
+    </div>
+
+    <div>
+        <p>
+            O projeto é um console que tem como função o gerenciamento de um elevador,
+            possuindo as funções de:
+            <ul>
+                <li>Inicializar</li>
+                <li>Entrar</li>
+                <li>Sair</li>
+                <li>Subir</li>
+                <li>Descer</li>
+            </ul>
+            Feito no modelo MVC (Model-View-Contoller)
+        </p>
+    </div>
+
+    <!-- Inicio do contudo da pasta model. -->
+    <div>
+        <hr>
+        <h2>Model</h2>
+        <h3>- Elevador.cs</h3>
+        <p>
+            Classe para armazenar os dados do Elevador.
+        </p>
+
+        <div>
+            <img class="flutuarEsquerda" src="img/elevador_propriedades.png" />
+            <h4 class="flutuarEsquerda">Propriedades</h4>
+            <ul class="flutuarEsquerda">
+                <li>
+                    INT <strong>AndarAtual</strong> guarda o andar em que o elevador se encontra;
+                </li>
+
+                <li>
+                    INT <strong>totalAndar</strong> guarda a quantidade de andares que o prédio possui;
+                </li>
+
+                <li>
+                    INT <strong>qtdPessoas</strong> indica quantas pessoas estão no elevador no momento.
+                </li>
+
+                <li>
+                    INT <strong>capacidade</strong> indica a quantidade de pessoas que o elevador suporta.
+                </li>
+            </ul>
+        </div>
+
+        <!-- Inicio do conteudo dos metodos da classe Elevador.cs. -->
+        <div class="clear">
+
+            <br>
+            <br>
+
+            <h4>Métodos</h4>
+            <ul>
+                <li>
+                    <h5>Entrar</h5>
+                    <p>
+                        Este método é responsavel por adicionada uma pessoa ao interior do elevador incrimentar
+                        a variável <strong>qtdPessoas</strong>.
+                    </p>
+                    <img src="img/elevador_metodo_entrar.png" />
+                </li>
+
+                <br>
+
+                <li>
+                    <h5>Sair</h5>
+                    <p>
+                        Este método é o contrario do anterior, sendo responsavel por remover uma pessoa ao interior do elevador dencrimentando
+                        a variável <strong>qtdPessoas</strong>.
+                    </p>
+                    <img src="img/elevador_metodo_sair.png" />
+                </li>
+
+                <br>
+
+                <li>
+                    <h5>Subir</h5>
+                    <p>
+                        Este método movimenta o elevador para cima, ao ser acionado faz com o que valor de <strong>andarAtual</strong> seja aumentado em 1.
+                        a variável <strong>qtdPessoas</strong>.
+                    </p>
+                    <img src="img/elevador_metodo_subir.png" />
+                </li>
+
+                <br>
+
+                <li>
+                    <h5>Descer</h5>
+                    <p>
+                        Este método é o contrario do anterior, sendo responsavel por mover o elevador para baixo, e diminuindo a
+                        variável <strong>andarAtual</strong> em 1.
+                    </p>
+                    <img src="img/elevador_metodo_sair.png" />
+                </li>
+            </ul>
+        </div>  <!-- Fim do conteudo dos metodos da classe Elevador.cs. -->
+
+    </div> <!-- Fim do contudo da pasta model. -->
+    <!-- Inicio do contuado da pasta Controller. -->
+    <div>
+        <div>
+            <br><hr>
+            <h2>Controller</h2>
+            <h3>- Painel.cs</h3>
+            <p>
+                Classe que recebe os dados do usuario e envia para a classe Elevador.cs no model.
+            </p>
+            <h4>Propriedades</h4>
+            <p>Está classe não possui propriedades.</p>
+        </div>
+
+        <!-- Inicio do conteudo dos metodos da classe Painel.cs. -->
+        <div>
+            <h4>Métodos</h4>
+            <ul>
+                <li>
+                    <h5>Interacao()</h5>
+                    <p>
+                        Método responsavél por receber os dados passados pelo usuário e fazer validações, se estiverem de acordo envia
+                        para o método Inicializar() da classe Elevador.
+                    </p>
+                </li>
+
+                <br>
+
+                <li>
+                    <h5>ExibeMenu()</h5>
+                    <p>
+                        Exibe um menu ao usuário pelo qual ele intege com o programa.
+                    </p>
+                    <img src="img/painel_metodo_exibe_menu.png" />
+                </li>
+            </ul>
+        </div><!-- Fim do conteudo dos metodos da classe Painel.cs. -->
+    </div><!-- Fim do contuado da pasta Controller. -->
+    <!-- Inicio do conteudo da classe Program.cs. -->
+    <div>
+        <br><hr>
+        <h2>Program.cs</h2>
+        <p>
+            Respónsavel por iniciar o console, onde está lozalizada a Main().
+        </p>
+        <p>
+            Possui as seguintes instâncias:
+        </p>
+        <ul>
+            <li>
+                Instância de <strong>Elevador.cs</strong>;
+            </li>
+            <li>
+                Instância de <strong>Painel.cs</strong>.
+            </li>
+        </ul>
+
+        <p>
+            Através da instância de Painel.cs, chama o método Interacao() passando como parâmetro a instância de Elevador.cs. 
+            para coletar as informações necessarias a execução do programa com o usuário.
+        </p>
+        <p>
+            Logo em seguida chama através também da instância de Painel.cs chama o metodo ExibeMenu() para que o usuário possa interagir com o programa ja inicializado.
+        </p>
+
+    </div> <!-- Fim do conteudo da classe Program.cs. -->
+</div>
+<br>
+<hr>
+<h4>Autor: Jaire Silva</h4>
+</div>

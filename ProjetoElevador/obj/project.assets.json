@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Jaire\\Desktop\\ProjetoElevador\\ProjetoElevador\\ProjetoElevador.csproj",
+      "projectUniqueName": "C:\\Users\\Jaire\\Desktop\\ProjetoElevador-Jornada-MS-Samsung-Ocean\\ProjetoElevador\\ProjetoElevador.csproj",
       "projectName": "ProjetoElevador",
-      "projectPath": "C:\\Users\\Jaire\\Desktop\\ProjetoElevador\\ProjetoElevador\\ProjetoElevador.csproj",
+      "projectPath": "C:\\Users\\Jaire\\Desktop\\ProjetoElevador-Jornada-MS-Samsung-Ocean\\ProjetoElevador\\ProjetoElevador.csproj",
       "packagesPath": "C:\\Users\\Jaire\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Jaire\\Desktop\\ProjetoElevador\\ProjetoElevador\\obj\\",
+      "outputPath": "C:\\Users\\Jaire\\Desktop\\ProjetoElevador-Jornada-MS-Samsung-Ocean\\ProjetoElevador\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Jaire\\AppData\\Roaming\\NuGet\\NuGet.Config",

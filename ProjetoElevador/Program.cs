@@ -11,8 +11,7 @@ namespace ProjetoElevador
             var elevador = new Elevador();
             var painel = new Painel();
 
-            // Exibe msg de boas vindas e recebe os dados do elevador
-            painel.Inicializar(elevador); 
+            painel.Interacao(elevador); 
             painel.ExibeMenu(elevador);
         }
 

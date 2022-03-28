@@ -4,23 +4,25 @@ namespace ProjetoElevador.Model
 {
     public class Elevador
     {
-        public int AndarAtual { get; set; } = 0; // o 0 representa o térreo
-        public int TotalAndar { get; set; }
-        public int Capacidade { get; set; }
-        public int QuantidadePessoa { get; set; } = 0;
+        // O 0 representa o térreo.
+        public int andarAtual { get; set; } = 0;
+        public int totalAndar { get; set; }
+        public int qtdPessoa { get; set; } = 0;
+        public int capacidade { get; set; }
 
         public void Inicializar(int capacidade, int totalAndar)
         {
-            TotalAndar = totalAndar;
-            Capacidade = capacidade;
+            this.totalAndar = totalAndar;
+            this.capacidade = capacidade;
         }
-        
+
         public void Entrar()
         {
-         if(QuantidadePessoa < Capacidade)
+            if (qtdPessoa < capacidade)
             {
-                QuantidadePessoa++;
-            } else
+                qtdPessoa++;
+            }
+            else
             {
                 Console.WriteLine("A capacidade máxima de pessoa foi atingida!");
             }
@@ -28,10 +30,11 @@ namespace ProjetoElevador.Model
 
         public void Sair()
         {
-            if(QuantidadePessoa > 0)
+            if (qtdPessoa > 0)
             {
-                QuantidadePessoa--;
-            } else
+                qtdPessoa--;
+            }
+            else
             {
                 Console.WriteLine("Não há mais pessoas no elevador!");
             }
@@ -39,10 +42,11 @@ namespace ProjetoElevador.Model
 
         public void Subir()
         {
-            if(AndarAtual < TotalAndar)
+            if (andarAtual < totalAndar)
             {
-                AndarAtual++;
-            }else
+                andarAtual++;
+            }
+            else
             {
                 Console.WriteLine("Opa!!! Parece que você já chegou no último andar!");
             }
@@ -50,9 +54,9 @@ namespace ProjetoElevador.Model
 
         public void Descer()
         {
-            if(AndarAtual > 0)
+            if (andarAtual > 0)
             {
-                AndarAtual--;
+                andarAtual--;
             }
             else
             {

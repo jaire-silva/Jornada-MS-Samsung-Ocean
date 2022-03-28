@@ -9,7 +9,7 @@ namespace ProjetoElevador.Controller
 {
     public class Painel
     {
-        public void Inicializar(Elevador elevador)
+        public void Interacao(Elevador elevador)
         {
             // Trata o laço de repetição, se diferente de 0, ele encerra o laço.
             var confirmacao = -1;
@@ -121,8 +121,8 @@ namespace ProjetoElevador.Controller
 
             do
             {
-                Console.WriteLine("Elevador atualmente com {0} de {1} pessoas", elevador.QuantidadePessoa, elevador.Capacidade);
-                Console.WriteLine("Elevador atualmente no {0} de {1} andares", elevador.AndarAtual, elevador.TotalAndar);
+                Console.WriteLine("Elevador atualmente com {0} de {1} pessoas", elevador.qtdPessoa, elevador.capacidade);
+                Console.WriteLine("Elevador atualmente no {0} de {1} andares", elevador.andarAtual, elevador.totalAndar);
                 Console.WriteLine("\n\nO que você deseja fazer?");
                 Console.WriteLine("\n 1 - Entrar \n 2 - Sair \n 3 - Subir \n 4 - Descer \n 5 - Sair do programa");
 
