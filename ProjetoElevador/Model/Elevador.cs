@@ -2,7 +2,7 @@
 
 namespace ProjetoElevador.Model
 {
-    internal class Elevador
+    public class Elevador
     {
         public int AndarAtual { get; set; } = 0; // o 0 representa o térreo
         public int TotalAndar { get; set; }
